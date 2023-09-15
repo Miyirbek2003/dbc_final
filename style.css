@@ -406,7 +406,7 @@ main>.prices {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 4px 4px 8px 0px rgba(144, 144, 144, 0.1);
+    box-shadow: 4px 4px 8px 0px rgba(144, 144, 144, 0.3);
     padding: 25px 35px;
     border-radius: 16px;
     height: min-content;
@@ -1029,6 +1029,9 @@ footer {
     .feedback swiper-slide {
         max-width: 100%;
     }
+    .swiper-button-next svg, .swiper-button-prev svg{
+        width: 50% !important;
+    }
 }
 
 
@@ -1059,6 +1062,14 @@ footer {
 
     .projects-title {
         flex-direction: column;
+    }
+
+
+    .hero-title {
+        max-width: 100%;
+    }
+    .prices-title h2{
+        font-size: 22px;
     }
 }
 

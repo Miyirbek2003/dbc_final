@@ -1,23 +1,5 @@
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
 
 var nav_item = document.querySelectorAll('.item-link')
-
-var mySwiper = new Swiper('.feedSwipe', {
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        },
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-})
 
 // TABS
 var acc = document.getElementsByClassName("accordion");
@@ -86,16 +68,15 @@ window.onscroll = () => {
             current = section.getAttribute("id");
         }
     });
-    console.log(navLi);
     navLi.forEach((a) => {
         a.classList.remove("active");
         if (a.classList.contains(current)) {
             a.classList.add("active");
         }
-        
+
     });
 };
-$('.item-link').click( () => {
+$('.item-link').click(() => {
     $('.link-items').removeClass('active')
     $('#nav-icon1').removeClass('open')
 })
@@ -121,4 +102,3 @@ window.addEventListener('scroll', () => {
 })
 
 
-swiperEl.initialize();

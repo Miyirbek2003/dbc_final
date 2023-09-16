@@ -1,23 +1,5 @@
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
 
 var nav_item = document.querySelectorAll('.item-link')
-
-var mySwiper = new Swiper('.feedSwipe', {
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        },
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-})
 
 // TABS
 var acc = document.getElementsByClassName("accordion");
@@ -86,16 +68,15 @@ window.onscroll = () => {
             current = section.getAttribute("id");
         }
     });
-    console.log(navLi);
     navLi.forEach((a) => {
         a.classList.remove("active");
         if (a.classList.contains(current)) {
             a.classList.add("active");
         }
-        
+
     });
 };
-$('.item-link').click( () => {
+$('.item-link').click(() => {
     $('.link-items').removeClass('active')
     $('#nav-icon1').removeClass('open')
 })
@@ -107,7 +88,7 @@ $('.burger').click(() => {
 })
 
 const header = document.getElementById('header')
-
+const isOpen = document.querySelector('#nav-icon1').classList.contains('open')
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         header.style.background = 'white'
@@ -118,7 +99,7 @@ window.addEventListener('scroll', () => {
         header.style.background = 'transparent'
         header.style.position = 'static'
     }
+    isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
 })
 
 
-swiperEl.initialize();

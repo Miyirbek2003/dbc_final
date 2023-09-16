@@ -88,7 +88,7 @@ $('.burger').click(() => {
 })
 
 const header = document.getElementById('header')
-
+const isOpen = document.querySelector('#nav-icon1').classList.contains('open')
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         header.style.background = 'white'
@@ -99,6 +99,7 @@ window.addEventListener('scroll', () => {
         header.style.background = 'transparent'
         header.style.position = 'static'
     }
+    isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
 })
 
 

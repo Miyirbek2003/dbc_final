@@ -842,6 +842,10 @@ footer {
     background-color: rgba(0, 182, 185, 1);
 }
 
+.link-items>div {
+    display: none;
+}
+
 @media screen and (max-width:1144px) {
     .services {
         padding: 0 0 0 0px;
@@ -985,6 +989,8 @@ footer {
         transition: right 0.3s;
     }
 
+
+
     .link-items.active {
         position: fixed;
         right: 0;
@@ -1013,10 +1019,18 @@ footer {
         justify-content: center;
         z-index: 1000;
     }
-
-    .social,
-    .lang,
-    .pay {
+    .link-items > div{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .link-items a img{
+        width: 25px;
+    }
+    header a.active{
+        font-size: 20px;
+    }
+    .header-inner>.div2 {
         display: none;
     }
 }
@@ -1029,7 +1043,9 @@ footer {
     .feedback swiper-slide {
         max-width: 100%;
     }
-    .swiper-button-next svg, .swiper-button-prev svg{
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
         width: 50% !important;
     }
 }
@@ -1041,8 +1057,16 @@ footer {
         flex-wrap: nowrap;
     }
 
+    .vertical-tab button {
+        min-width: 32px;
+    }
+
     .services-card {
         height: 100%;
+    }
+
+    .tabcontent {
+        padding: 0;
     }
 
 
@@ -1068,7 +1092,8 @@ footer {
     .hero-title {
         max-width: 100%;
     }
-    .prices-title h2{
+
+    .prices-title h2 {
         font-size: 22px;
     }
 }

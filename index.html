@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -35,9 +35,24 @@
               <li class="item-link" onclick="scrollId('tab-lists')">
                 <a class="tab-lists">О нас</a>
               </li>
+              <div>
+                <div class="social">
+                  <a href="facebook.com"
+                    ><img src="./img/facebook.svg" alt=""
+                  /></a>
+                  <a href="instagram.com"
+                    ><img src="./img/insta.svg" alt=""
+                  /></a>
+                  <a href="tg.com"><img src="./img/tele.svg" alt="" /></a>
+                </div>
+                <div class="lang"><span>Рус</span>/<span>Uzb</span></div>
+                <div class="pay">
+                  Тип оплаты <img src="./img/card.svg" alt="" />
+                </div>
+              </div>
             </ul>
           </div>
-          <div>
+          <div class="div2">
             <div class="social">
               <a href="facebook.com"><img src="./img/facebook.svg" alt="" /></a>
               <a href="instagram.com"><img src="./img/insta.svg" alt="" /></a>
@@ -59,7 +74,7 @@
       </div>
     </header>
     <main>
-      <section id="main">
+      <section id="main" data-aos="fade-up">
         <div class="container">
           <div class="main-inner">
             <div class="main-title">
@@ -103,7 +118,7 @@
         </div>
         <img class="shape3" src="./img/shape3.svg" alt="" />
       </section>
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <div class="container">
           <div class="about-inner">
             <img src="./img/hero2.png" alt="" />
@@ -129,7 +144,7 @@
               </div>
             </div>
           </div>
-          <div class="services">
+          <div class="services" data-aos="fade-up">
             <div class="hero-title">
               <div class="side"><span></span> О НАС</div>
               <h2>наши услуги</h2>
@@ -143,15 +158,15 @@
               </div>
             </div>
             <div class="services-card">
-              <div>
+              <div data-aos="flip-left">
                 <img src="./img/smm.png" alt="" />
                 <h3>СММ</h3>
               </div>
-              <div>
+              <div data-aos="flip-left">
                 <img src="./img/web.png" alt="" />
                 <h3>веб сайты</h3>
               </div>
-              <div>
+              <div data-aos="flip-left">
                 <img src="./img/design.png" alt="" />
                 <h3>Ui ux дизайн</h3>
               </div>
@@ -159,7 +174,7 @@
           </div>
         </div>
       </section>
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <div class="container">
           <div class="prices-inner">
             <div class="prices-title">
@@ -174,7 +189,7 @@
               </h2>
             </div>
             <div class="prices-card">
-              <div>
+              <div data-aos="flip-right">
                 <h3>Лендинг</h3>
                 <p>Одностраничный сайт за 3 дня</p>
 
@@ -186,14 +201,14 @@
                   </button>
                 </div>
               </div>
-              <div>
+              <div data-aos="flip-right">
                 <h3>Лендинг</h3>
                 <p>Одностраничный сайт за 3 дня</p>
 
                 <h2>990.000 от</h2>
                 <p>Премиум детали в подарок</p>
               </div>
-              <div>
+              <div data-aos="flip-right">
                 <h3>Лендинг</h3>
                 <p>Одностраничный сайт за 3 дня</p>
 
@@ -204,7 +219,7 @@
           </div>
         </div>
       </section>
-      <section id="projects">
+      <section id="projects" data-aos="fade-up">
         <div class="container">
           <div class="projects-inner">
             <div class="prices-title projects-title">
@@ -220,7 +235,7 @@
           </div>
         </div>
       </section>
-      <section id="feedback">
+      <section id="feedback" data-aos="fade-up">
         <div class="container">
           <div class="feedback-title">
             <h2>
@@ -232,7 +247,7 @@
         </div>
       </section>
 
-      <section id="tab-lists">
+      <section id="tab-lists" data-aos="fade-up">
         <div class="container">
           <div class="tab">
             <div class="vertical-tab">
@@ -375,7 +390,10 @@
       </div>
     </footer>
     <script type="text/javascript" src="/jQuery.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="text/javascript" src="/main.js"></script>
   </body>
 </html>

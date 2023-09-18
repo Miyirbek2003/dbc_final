@@ -513,8 +513,8 @@ main>.projects {
 .point {
     padding: 10px;
     background: rgba(37, 43, 43, 1);
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,6 +846,104 @@ footer {
     display: none;
 }
 
+.slick-slide {
+    margin: 0 27px;
+}
+
+
+
+.pr-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.pr-actions>button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #00B6B9 0%, #0F0F3E 103.46%),
+        linear-gradient(0deg, #0D0D0D, #0D0D0D);
+    border: none;
+    border-radius: 5px;
+}
+
+.pr-item>img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.pr-item p {
+    margin-top: 15px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.pr-actions>div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.projects-slider {
+    margin-top: 25px;
+}
+
+.pr-actions>div>button {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.slick-list.draggable {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "";
+    display: none !important;
+}
+
+.slick-prev {
+    left: 0 !important;
+}
+
+.slick-next {
+    right: 0 !important;
+}
+
+.slick-arrow {
+    opacity: 1;
+    font-size: 25px;
+}
+
+.slick-next,
+.slick-prev {
+    font-size: 25px !important;
+    color: #4A4856 !important;
+}
+
+.feed-item {
+    position: relative;
+}
+
+
+.feed-item {
+    padding: 15px;
+    box-shadow: 20px 20px 40px 0px #9696961A;
+}
+
+.feed-item>div {
+    padding: 10px;
+}
+
 @media screen and (max-width:1144px) {
     .services {
         padding: 0 0 0 0px;
@@ -1019,17 +1117,21 @@ footer {
         justify-content: center;
         z-index: 1000;
     }
-    .link-items > div{
+
+    .link-items>div {
         display: flex;
         flex-direction: column-reverse;
         gap: 15px;
     }
-    .link-items a img{
+
+    .link-items a img {
         width: 25px;
     }
-    header a.active{
+
+    header a.active {
         font-size: 20px;
     }
+
     .header-inner>.div2 {
         display: none;
     }

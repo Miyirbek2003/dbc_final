@@ -103,3 +103,53 @@ window.addEventListener('scroll', () => {
 })
 
 
+$('.projects-slider').slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+    ],
+    prevArrow: "<button type='button' class='slick-prev'><i class='fa-solid fa-angle-left'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+
+
+$('.feed-cards  ').slick({
+    infinite: true,
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+    ],
+    prevArrow: "<button type='button' class='slick-prev'><i class='fa-solid fa-angle-left'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
